@@ -1,0 +1,72 @@
+[
+	{
+		"type": "Электрогитара ",
+		"name": "Dean Custom 350 Floyd Metallic Sillver",
+		"discription": "Электрогитара, корпус - липа с накладкой из волнистого клена, гриф - клен с палисандровой накладкой, звукосниматели DMT Design, колки Grover, Floyd Rose Special Bridge, цвет Metallic Silver",
+		"img": "img/electro/electro1.jpeg",
+		"price": "22 500 рублесов         "
+	},
+	{
+		"type": "Электрогитара ",
+		"name": "Dean Custom 380 Floyd Trans Amberburst",
+		"discription": "Электрогитара, корпус - липа с накладкой из волнистого клена, гриф - клен с палисандровой накладкой, звукосниматели DMT Design, колки Grover, Floyd Rose Special Bridge, цвет Trans Amberburst",
+		"img": "img/electro/electro2.jpeg",
+		"price": "26 200 рублесов         "
+	},
+	{
+		"type": "Электрогитара ",
+		"name": "AXL AS-820 CKBW Badwater SRO",
+		"discription": "Электрогитара, корпус - ольха, гриф - клен, звукосниматели: 1 Humbucker, 2 Single Coil, цвет Crackle Brown/White",
+		"img": "img/electro/electro3.jpeg",
+		"price": "8 058 рублесов         "
+	},
+	{
+		"type": "Электрогитара",
+		"name": "Dean Michael Batio MAB3 Silver Burst",
+		"discription": "Электрогитара, корпус - американская липа, гриф - клен с палисандровой накладкой, Floyd Rose Special Bridge, цвет Silver Burst",
+		"img": "img/electro/electro4.jpeg",
+		"price": "26 234 рублесов         "
+	},
+	{
+		"type": "Электрогитара",
+		"name": "Dean Razorback - Skullz w/Case (RZR SKLZ)",
+		"discription": "Электрогитара с кейсом, корпус - красное дерево, мензура - 24-3/4, гриф - красное дерево",
+		"img": "img/electro/electro5.jpeg",
+		"price": "63 395 рублесов         "
+	},
+	{
+		"type": "Электрогитара",
+		"name": "Dean V Dave Mustaine - Rust In Peace w/Case (VMNT RIP)",
+		"discription": "Электрогитара",
+		"img": "img/electro/electro6.jpeg",
+		"price": "61 160 рублесов         "
+	},
+	{
+		"type": "Электрогитара",
+		"name": "ESP LTD H-338 BLKS",
+		"discription": "Электрогитара, 8 струн, красное дерево, привинченный гриф 25,5",
+		"img": "img/electro/electro7.jpeg",
+		"price": "55 640 рублесов         "
+	},
+	{
+		"type": "Электрогитара",
+		"name": "ESP LTD Viper-100/FM/STBC",
+		"discription": "Электрогитара",
+		"img": "img/electro/electro8.jpeg",
+		"price": "29 238 рублесов         "
+	},
+	{
+		"type": "Электрогитара",
+		"name": "Vintage V100AW",
+		"discription": "Электрогитара типа Les Paul®, корпус - красное дерево, гриф - красное дерево, вклеенный, цвет Arctic White, золоченая фурнитура",
+		"img": "img/electro/electro9.jpeg",
+		"price": "23 197 рублесов         "
+	},
+	{
+		"type": "Электрогитара",
+		"name": "Vintage V2BK",
+		"discription": "Электрогитара типа Telecaster®, корпус - восточный тополь, гриф - клён, накладка грифа - клён, цвет Black",
+		"img": "img/electro/electro10.jpeg",
+		"price": "19 000 рублесов         "
+	}
+]

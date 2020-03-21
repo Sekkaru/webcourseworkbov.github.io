@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Интернет-магазин музыкальных товаров "Пошумим БЛИН"</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller('myCtrl', function($scope, $http) {
+            $http.get("package.json")
+                .then(function(response) {
+                    $scope.products = response.data;
+                });
+        });
+    </script>
+
+    <style>
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+            background-color: black;
+            border: 1px solid orange;
+        }
+
+        .jumbotron {
+            margin-bottom: 0;
+            border: 1px solid orange;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+        .imgGlStr{
+            width: 110px;
+            height: 255px;
+           float:left;
+        }
+        .hei{
+            height: 270px;
+        }
+        .CatalogProdukcii{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1>Internet market "Noise, pancake"</h1>
+        <p>Top tools in the world, lets check it</p>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="logo.jpg"><img src="logo.jpg" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                <li><a href="#demonstration" class="btn" data-toggle="collapse"><span class="glyphicon glyphicon-star"></span>Products</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Account</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul><br><br><br>
+            <div id="demonstration" class="collapse CatalogProdukcii">
+                <ul>
+                    <li><a href="ProdukciyaElectro.html">Электрогитары</a></li>
+                    <li><a href="ProdukciyaBass.html">Бас-гитары</a></li>
+                    <li><a href="ProdukciyaClassic.html">Классические гитары</a></li>
+                    <li>Акустические гитары</li>
+                    <li>Синтезаторы</li>
+                    <li>Ударные установки</li>
+                    <li>Педали усиления</li>
+                    <li>Прочие атрибуты</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4" ng-repeat="product in products">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><h4>{{product.type}}</h4><br>{{product.name}}</div>
+                    <div class="panel-footer hei"><img ng-src="{{product.img}}" alt="" class="imgGlStr">{{product.Opis}}<br><br><a href="#!" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Просмотр</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+    <p class="text-right">Check us on <br><a href="https:\\vk.com" target="_blank">VK</a> <br><a href="https:\\instagram.com" target="_blank">INSTA</a><br>and <a href="https:\\youtube.com" target="_blank">YouTube</a> </p>
+    <form class="form-inline">Get deals:
+        <input type="email" class="form-control" size="50" placeholder="Email Address">
+        <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+</footer>
+</body>
+</html>
