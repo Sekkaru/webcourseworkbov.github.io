@@ -6,10 +6,6 @@
     <title>Интернет-магазин музыкальных товаров "Пошумим БЛИН"</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 
     <style>
         .navbar {
@@ -103,26 +99,44 @@
     </form>
 </footer>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 <script>
     var app = angular.module("myApp", ["ngRoute"]);
 
-    app.controller('ctrlOptionally', function($scope, $http, $routeParams){
-
+    app.controller('optionallyCtrl', function($scope, $http, $routeParams){
+    var currentidType = $routeParams.idType;
+    //$scope.view = ;
     });
 
-    app.controller('ctrlAll', function($scope, $http, $routeParams){
-
+    app.controller('allCtrl', function($scope, $http){
+        let arrayy = [];
+        $http.get("bass.json")
+            .then(function(response) {
+                arrayy.push(response.data);
+            });
+        $http.get("classic.json")
+            .then(function(response) {
+                arrayy.push(response.data);
+        });
+        $http.get("electro.json")
+            .then(function(response) {
+                arrayy.push(response.data);
+        })
+        alert(arrayy);
     });
+
     app.config(function($routeProvider) {
         $routeProvider
-            .when("/red", {
+            .when("/:idType", {
                 templateUrl : "Maket.htm",
-                controller : "ctrlOptionally"
+                controller : "optionallyCtrl"
             })
             .otherwise({
                 templateUrl : "Maket.htm",
-                controller : "ctrlAll"
+                controller : "allCtrl"
         });
     });
 </script>
