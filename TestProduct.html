@@ -9,16 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-
-    <script>
-        var app = angular.module("myApp", []);
-        app.controller('myCtrl', function($scope, $http) {
-            $http.get("bass.json")
-                .then(function(response) {
-                    $scope.products = response.data;
-                });
-        });
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 
     <style>
         .navbar {
@@ -73,27 +64,34 @@
 
             <ul class="nav navbar-nav">
                 <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                <li><a href="#demonstration" class="btn" data-toggle="collapse"><span class="glyphicon glyphicon-star"></span>Catalog</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span>Account</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
             </ul><br><br><br>
+            <div id="demonstration" class="collapse CatalogProdukcii">
+                <ul>
+                    <li><a href="#!electro">Электрогитары</a></li>
+                    <li><a href="#!bass">Бас-гитары</a></li>
+                    <li><a href="#!classic">Классические гитары</a></li>
+                    <li>Акустические гитары</li>
+                    <li>Синтезаторы</li>
+                    <li>Ударные установки</li>
+                    <li>Педали усиления</li>
+                    <li>Прочие атрибуты</li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
 
 
+
 <div ng-app="myApp" ng-controller="myCtrl">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-4" ng-repeat="product in products">
-                <div class="panel panel-primary">
-                    <div class="panel-heading"><h4>{{product.type}}</h4>{{product.name}}</div>
-                    <div class="panel-footer hei"><img ng-src="{{product.img}}" alt="" class="imgGlStr">{{product.discription}}<br><br>{{product.price}}<a href="#!" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Просмотр</a></div>
-                </div>
-            </div>
-        </div>
+        <div class="row" ng-view></div>
     </div>
 </div><br><br>
 
@@ -104,5 +102,29 @@
         <button type="button" class="btn btn-danger">Sign Up</button>
     </form>
 </footer>
+
+
+<script>
+    var app = angular.module("myApp", ["ngRoute"]);
+
+    app.controller('ctrlOptionally', function($scope, $http, $routeParams){
+
+    });
+
+    app.controller('ctrlAll', function($scope, $http, $routeParams){
+
+    });
+    app.config(function($routeProvider) {
+        $routeProvider
+            .when("/red", {
+                templateUrl : "Maket.htm",
+                controller : "ctrlOptionally"
+            })
+            .otherwise({
+                templateUrl : "Maket.htm",
+                controller : "ctrlAll"
+        });
+    });
+</script>
 </body>
 </html>
