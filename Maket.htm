@@ -1,0 +1,6 @@
+<div class="col-sm-4" ng-repeat="product in products">
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h4>{{product.type}}</h4>{{product.name}}</div>
+        <div class="panel-footer hei"><img ng-src="{{product.img}}" alt="" class="imgGlStr">{{product.discription}}<br><br>{{product.price}}<a href="#!" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Просмотр</a></div>
+    </div>
+</div>
