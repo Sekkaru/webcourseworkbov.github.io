@@ -11,6 +11,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -29,6 +30,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -48,7 +50,7 @@
       <updated>1585031786279</updated>
       <workItem from="1585031808245" duration="7678000" />
       <workItem from="1586070961079" duration="2914000" />
-      <workItem from="1586252355454" duration="2970000" />
+      <workItem from="1586252355454" duration="7798000" />
     </task>
     <servers />
   </component>
