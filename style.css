@@ -1,0 +1,46 @@
+.imgGlStr{
+    width: 110px;
+    height: 255px;
+    float:left;
+}
+.hei{
+    height: 270px;
+}
+.CatalogProdukcii{
+    background-color: black;
+    color: white;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.ultratest{
+    width: 33.3333333333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.ultratest1{
+    width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.ultratest2{
+    width: 25%;
+    padding-right: 300px;
+    padding-left: 15px;
+}
+.ultratest2:hover{
+    border: 1px solid white;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.borderRed{
+    border: 1px solid darkred;
+}
+.colorForH{
+    color: #414141;
+}
