@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Интернет-магазин музыкальных товаров "Пошумим БЛИН"</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
-    <script>
+   <!-- <script>
         var app = angular.module("myApp", []);
         app.controller('myCtrl', function($scope, $http) {
             $http.get("package.json")
@@ -18,7 +18,7 @@
                     $scope.products = response.data;
                 });
         });
-    </script>
+    </script>-->
 
     <style>
         .navbar {
@@ -48,6 +48,26 @@
         .CatalogProdukcii{
             background-color: black;
             color: white;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .ultratest{
+            width: 33.3333333333333%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .ultratest1{
+            width: 25%;
+            padding-right: 15px;
+            padding-left: 15px;
         }
     </style>
 </head>
@@ -87,12 +107,63 @@
 
 <br><br>
 
+<div class="flex-container">
+    <div class="ultratest1">
+        <h3>Доставка по всей России</h3>
+        <p>Отсутствует</p>
+    </div>
+
+    <div class="ultratest1">
+        <h3>Варианты оплаты</h3>
+        <p>Не существуют</p>
+    </div>
+
+    <div class="ultratest1">
+        <h3>Гарантии</h3>
+        <p>Нулевые</p>
+    </div>
+
+    <div class="ultratest1">
+        <h3>Условия возврата</h3>
+        <p>Не существуют как таковые, ибо какой возврат если вы даже оплатить не сможете?</p>
+    </div>
+</div>
+
+<br><br>
+
+<div class="flex-container">
+    <div class="red ultratest">
+        <h3>О компании</h3>
+        <p>"Noice, pancake" является одной из первых музыкальных компаний, основанных в Новосибирске, и поставляющих на российский рынок профессиональное музыкальное, звуковое и световое оборудование. Вот уже на протяжении 20 лет мы поддерживаем статус надёжного и стабильного партнёра в области музыкальных технологий.</p>
+        <p>Фирменные магазины нашей компании находятся в Новосибирске а также офис-склад в Москве. В каждом из них представлен широкий ассортимент музыкальных инструментов, звукового и светового оборудования от ведущих мировых производителей. </p>
+    </div>
+
+    <div class="blue ultratest">
+        <h3>Новости</h3>
+        <p>28 декабря 2019<br>
+            Наш график работы в новогодние праздники<br><br>
+            20 июля 2019<br>
+            Внимание! Не работает наш магазин в Кемерово<br><br>
+            16 июля 2019<br>
+            Летняя распродажа Yamaha YDP-143/163<br><br>
+            20 февраля 2019<br>
+            Yamaha для экономных<br><br>
+            7 февраля 2019<br>
+            Мастер-класс Александра Зилкова<br><br>
+        </p>
+    </div>
+
+    <div>
+
+    </div>
+</div>
+
 <footer class="container-fluid text-center">
     <p class="text-right">Check us on <br><a href="https:\\vk.com" target="_blank">VK</a> <br><a href="https:\\instagram.com" target="_blank">INSTA</a><br>and <a href="https:\\youtube.com" target="_blank">YouTube</a> </p>
-    <form class="form-inline">Get deals:
+    <!--<form class="form-inline">Get deals:
         <input type="email" class="form-control" size="50" placeholder="Email Address">
         <button type="button" class="btn btn-danger">Sign Up</button>
-    </form>
+    </form>-->
 </footer>
 </body>
 </html>
