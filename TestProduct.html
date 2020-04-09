@@ -84,7 +84,7 @@
 
 
 
-<div ng-app="myApp" ng-controller="allCrtl">
+<div ng-app="myApp">
     <div class="container-fluid">
         <div class="row" ng-view></div>
     </div>
@@ -148,15 +148,15 @@
         $http.get("bass.json")
             .then(function(response) {
                 arrayy.push(response.data);
-            })
+            });
         $http.get("classic.json")
             .then(function(response) {
                 arrayy.push(response.data);
-            })
+            });
         $http.get("electro.json")
             .then(function(response) {
                 arrayy.push(response.data);
-            })
+            });
         alert(arrayy);
     });
 
