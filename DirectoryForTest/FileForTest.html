@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styleForTest.css">
+</head>
+<body>
+<!-- Forked from Chris Coyier's pen : https://codepen.io/chriscoyier/pen/eYNQyPe -->
+<div class="range-wrap">
+    <input type="range" class="range" min="0" max="9999999999">
+    <output class="bubble"></output>
+</div>
+
+<div class="range-wrap">
+    <input type="range" class="range" min="50" max="60" step="2">
+    <output class="bubble"></output>
+</div>
+
+<div class="range-wrap">
+    <input type="range" class="range" min="-20" max="20">
+    <output class="bubble"></output>
+</div>
+
+<script>
+    const allRanges = document.querySelectorAll(".range-wrap");
+    allRanges.forEach((wrap) => {
+        const range = wrap.querySelector(".range");
+        const bubble = wrap.querySelector(".bubble");
+
+        range.addEventListener("input", () => {
+            setBubble(range, bubble);
+        });
+
+        // setting bubble on DOM load
+        setBubble(range, bubble);
+    });
+
+    function setBubble(range, bubble) {
+        const val = range.value;
+
+        const min = range.min || 0;
+        const max =  range.max || 99999999999;
+
+        const offset = Number(((val - min) * 100) / (max - min));
+
+        bubble.textContent = val;
+
+        // yes, 14px is a magic number
+        bubble.style.left = `calc(${offset}% - 14px)`;
+    }
+
+</script>
+</body>
+</html>
