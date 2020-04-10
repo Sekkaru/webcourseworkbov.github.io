@@ -38,9 +38,13 @@
     </style>
 </head>
 
-<div class="jumbotron">
+<div class="jumbotron flex-container">
+    <div class="ultratest3">
+        <img src="img/bigLogo.jpg" height="200" width="200">
+    </div>
+
     <div class="container text-center">
-        <h1>Internet market "Noise, pancake"</h1>
+        <h1 class="colorForH">Internet market "Noise, pancake"</h1>
         <p>Top tools in the world, lets check it</p>
     </div>
 </div>
@@ -58,13 +62,13 @@
         <div class="collapse navbar-collapse" id="myNavbar">
 
             <ul class="nav navbar-nav">
-                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-                <li><a href="#demonstration" class="btn" data-toggle="collapse"><span class="glyphicon glyphicon-star"></span>Catalog</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Account</a></li>
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Главная <br>    Страница</a></li>
+                <li><a href="#demonstration" class="btn" data-toggle="collapse"><span class="glyphicon glyphicon-star"></span> Каталог</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Личный кабинет</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                <li><a href="LogIn.html"><span class="glyphicon glyphicon-log-in"></span> Вход</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Корзина</a></li>
             </ul><br><br><br>
             <div id="demonstration" class="collapse CatalogProdukcii">
                 <ul>
@@ -157,7 +161,7 @@
             .then(function(response) {
                 arrayy.push(response.data);
             });
-        alert(arrayy);
+        //alert(arrayy);
     });
 
     app.config(function($routeProvider) {
