@@ -10,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -56,6 +56,7 @@
       <workItem from="1586524251675" duration="5195000" />
       <workItem from="1586585755115" duration="722000" />
       <workItem from="1586592309890" duration="3921000" />
+      <workItem from="1586674300708" duration="4968000" />
     </task>
     <servers />
   </component>
@@ -63,18 +64,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="312" y="92" key="#Notifications" timestamp="1585033374858">
+    <state x="312" y="92" key="#Notifications" timestamp="1586676201767">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
-    <state x="312" y="92" key="#Notifications/0.0.1440.870@0.0.1440.870" timestamp="1585033374858" />
-    <state x="221" y="66" key="SettingsEditor" timestamp="1585033364375">
+    <state x="312" y="92" key="#Notifications/0.0.1440.870@0.0.1440.870" timestamp="1586676201767" />
+    <state x="221" y="66" key="SettingsEditor" timestamp="1586675612808">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
-    <state x="221" y="66" key="SettingsEditor/0.0.1440.870@0.0.1440.870" timestamp="1585033364375" />
-    <state x="421" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1586592311149">
+    <state x="221" y="66" key="SettingsEditor/0.0.1440.870@0.0.1440.870" timestamp="1586675612808" />
+    <state x="421" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1586674843165">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
-    <state x="421" y="257" key="com.intellij.ide.util.TipDialog/0.0.1440.870@0.0.1440.870" timestamp="1586592311149" />
+    <state x="421" y="257" key="com.intellij.ide.util.TipDialog/0.0.1440.870@0.0.1440.870" timestamp="1586674843165" />
     <state x="383" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1586525539534">
       <screen x="0" y="0" width="1440" height="870" />
     </state>

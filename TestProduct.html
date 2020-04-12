@@ -57,7 +57,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="logo.jpg"><img src="logo.jpg" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="logo.jpg" alt=""></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
 
@@ -71,15 +71,16 @@
                 <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Корзина</a></li>
             </ul><br><br><br>
             <div id="demonstration" class="collapse CatalogProdukcii">
+                <br>
                 <ul>
                     <li><a href="#!/electro">Электрогитары</a></li>
                     <li><a href="#!/bass">Бас-гитары</a></li>
                     <li><a href="#!/classic">Классические гитары</a></li>
-                    <li>Акустические гитары</li>
-                    <li>Синтезаторы</li>
-                    <li>Ударные установки</li>
-                    <li>Педали усиления</li>
-                    <li>Прочие атрибуты</li>
+                    <li><a href="#!/akustic">Акустические гитары</a></li>
+                    <li><a href="#!/sintez">Синтезаторы</a></li>
+                    <li><a href="#!/drum">Ударные установки</a></li>
+                    <li><a href="#!/micro">Педали усиления</a></li>
+                    <li><a href="#!/other">Прочие атрибуты</a></li>
                 </ul>
             </div>
         </div>
@@ -158,6 +159,26 @@
                 arrayy.push(response.data);
             });
         $http.get("electro.json")
+            .then(function(response) {
+                arrayy.push(response.data);
+            });
+        $http.get("akustic.json")
+            .then(function(response) {
+                arrayy.push(response.data);
+            });
+        $http.get("drum.json")
+            .then(function(response) {
+                arrayy.push(response.data);
+            });
+        $http.get("sintez.json")
+            .then(function(response) {
+                arrayy.push(response.data);
+            });
+        $http.get("micro.json")
+            .then(function(response) {
+                arrayy.push(response.data);
+            });
+        $http.get("other.json")
             .then(function(response) {
                 arrayy.push(response.data);
             });
