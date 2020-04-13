@@ -3,28 +3,28 @@
     "type": "Ударная установка",
     "name": "Sonor AQ2 Safari Set White Pearl",
     "discription": "Барабанная установка, цвет белый",
-    "img": "img/drum/drum1,jpg",
-    "price": "51 870"
+    "img": "img/drum/drum1.jpeg",
+    "price": "51 870 рублесов"
   },
   {
     "type": "Ударная установка",
     "name": "Sonor AQ2 Stage Set White Pearl",
     "discription": "Барабанная установка, цвет белый",
     "img": "img/drum/drum2.jpg",
-    "price": "75 375"
+    "price": "75 375 рублесов"
   },
   {
     "type": "Ударная установка",
     "name": "Sonor SSE 13 Player Black Galaxy Sparkle",
     "discription": "(20'' x 12'' BD, 14'' x 5'' SD, 10'' x 8'' TT, 14'' x 12'' FT), цвет Black Galaxy Sparkle",
     "img": "img/drum/drum3.jpeg",
-    "price": "29 000"
+    "price": "29 000 рублесов"
   },
   {
     "type": "Ударная установка",
     "name": "Sonor SMF 11 Stage 2 Set Brushed Chrome",
     "discription": "Ударная установка, серия Smart Force (22x17.5' BD, 14x5.5' SD, 10x8' TT, 12x9' TT, 14x14' FT), цвет Brushed Chrome",
     "img": "img/drum/drum4.jpeg",
-    "price": "43 000"
+    "price": "43 000 рублесов"
   }
 ]

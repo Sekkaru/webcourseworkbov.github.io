@@ -4,41 +4,41 @@
     "name": "Planet Waves 50LT03",
     "discription": "Ремень гитарный, нейлон, Lethal Threat™ Collection - Miss Skull",
     "img": "img/other/other1.jpeg",
-    "price": "1 200"
+    "price": "1 200 рублесов"
   },
   {
     "type": "Полироль гитарная",
     "name": "Planet Waves PW-PL-02",
     "discription": "Полироль гитарная, жидкий воск из бразильской карнаубы",
     "img": "img/other/other2.jpeg",
-    "price": "460"
+    "price": "460 рублесов"
   },
   {
     "type": "Средство для очистки струн",
     "name": "D'Andrea DAS2/12",
     "discription": "Средство для очистки струн",
     "img": "img/other/other3.jpeg",
-    "price": "330"
+    "price": "330 рублесов"
   },
   {
     "type": "Ремень для гитары",
     "name": "Ernie Ball 4048",
     "discription": "Ремень для гитары, полипропилен, цвет оливковый",
     "img": "img/other/other4.jpeg",
-    "price": "595"
+    "price": "595 рублесов"
   },
   {
     "type": "Каподастр",
     "name": "Dunlop 15C",
     "discription": "Каподастр для классической гитары",
     "img": "img/other/other5.jpeg",
-    "price": "539"
+    "price": "539 рублесов"
   },
   {
     "type": "Футляр для медиаторов",
     "name": "Alice A010A",
     "discription": "Треугольный, различных цветов",
     "img": "img/other/other6.jpeg",
-    "price": "30"
+    "price": "30 рублесов"
   }
 ]
