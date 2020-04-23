@@ -161,73 +161,132 @@
 <script>
     var app = angular.module("myApp", ["ngRoute"]);
 
-
-    //app.controller('optionallyCtrl', function($scope, $http, $routeParams){
-    //var currentidType = $routeParams.idType;
-    //$scope.view = ;
-    //});
-
-  /*  var app = angular.module("myApp", []);
-    app.controller('myCtrl', function($scope, $http) {
-        $http.get("package.json")
+    app.controller('akusticCtrl', function($scope, $http) {
+        $http.get("akustic.json")
             .then(function(response) {
                 $scope.products = response.data;
             });
-    });*/
+    });
+
+    app.controller('bassCtrl', function($scope, $http) {
+        $http.get("bass.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+
+    app.controller('classicCtrl', function($scope, $http) {
+        $http.get("classic.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+
+    app.controller('sintezCtrl', function($scope, $http) {
+        $http.get("sintez.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+
+    app.controller('drumCtrl', function($scope, $http) {
+        $http.get("drum.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+
+    app.controller('electroCtrl', function($scope, $http) {
+        $http.get("electro.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+
+    app.controller('microCtrl', function($scope, $http) {
+        $http.get("micro.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+
+    app.controller('otherCtrl', function($scope, $http) {
+        $http.get("other.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
 
 
     app.controller('allCtrl', function($scope, $http){
         $scope.products = [];
-        //let arrayy = [];
         $http.get("bass.json")
             .then(function(response) {
-                //arrayy.push(response.data);
                 Array.prototype.push.apply($scope.products, response.data);
             });
         $http.get("classic.json")
             .then(function(response) {
-                //arrayy.push(response.data);
                 Array.prototype.push.apply($scope.products, response.data);
             });
         $http.get("electro.json")
             .then(function(response) {
-                //arrayy.push(response.data);
                 Array.prototype.push.apply($scope.products, response.data);
             });
         $http.get("akustic.json")
             .then(function(response) {
-                //arrayy.push(response.data);
                 Array.prototype.push.apply($scope.products, response.data);
             });
         $http.get("drum.json")
             .then(function(response) {
-                //arrayy.push(response.data);
                 Array.prototype.push.apply($scope.products, response.data);
             });
         $http.get("sintez.json")
             .then(function(response) {
-                //arrayy.push(response.data);
                 Array.prototype.push.apply($scope.products, response.data);
             });
         $http.get("micro.json")
             .then(function(response) {
-                //arrayy.push(response.data);
                 Array.prototype.push.apply($scope.products, response.data);
             });
         $http.get("other.json")
             .then(function(response) {
-               //arrayy.push(response.data);
                 Array.prototype.push.apply($scope.products, response.data);
             });
-        //$scope.products = arrayy;
-        //alert(arrayy);
     });
 
     app.config(function($routeProvider) {
         $routeProvider
-            .when("/:idType", {
+            .when("/akustic", {
                 templateUrl : "Maket.htm",
-                controller : "optionallyCtrl"
+                controller : "akusticCtrl"
+            })
+            .when("/bass", {
+                templateUrl : "Maket.htm",
+                controller : "bassCtrl"
+            })
+            .when("/classic", {
+                templateUrl : "Maket.htm",
+                controller : "classicCtrl"
+            })
+            .when("/electro", {
+                templateUrl : "Maket.htm",
+                controller : "electroCtrl"
+            })
+            .when("/micro", {
+                templateUrl : "Maket.htm",
+                controller : "microCtrl"
+            })
+            .when("/other", {
+                templateUrl : "Maket.htm",
+                controller : "otherCtrl"
+            })
+            .when("/sintez", {
+                templateUrl : "Maket.htm",
+                controller : "sintezCtrl"
+            })
+            .when("/drum", {
+                templateUrl : "Maket.htm",
+                controller : "drumCtrl"
             })
             .otherwise({
                 templateUrl : "Maket.htm",
