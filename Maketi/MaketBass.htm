@@ -1,0 +1,261 @@
+<div>
+    <table>
+        <tr>
+            <td><select size="11">
+                <option><a href="#!">Выберите товар №1</a></option>
+                <option value="bass1"><a href="#!/bass1">ESP LTD B-154/STR</a></option>
+                <option value="bass2"><a href="#!/bass2">Mayones Comodous 4 Classic</a></option>
+                <option value="bass3"><a href="#!/bass3">Vintage V965TSB</a></option>
+                <option value="bass4"><a href="#!/bass4">Vintage V964BLK</a></option>
+                <option value="bass5"><a href="#!/bass5">Vintage V964NA</a></option>
+                <option value="bass6"><a href="#!/bass6">Vintage V964SSB</a></option>
+                <option value="bass7"><a href="#!/bass7">Cort GB4-Custom NAT</a></option>
+                <option value="bass8"><a href="#!/bass8">Vintage V904B</a></option>
+                <option value="bass9"><a href="#!/bass9">Sterling by MusicMan Ray34 TWB</a></option>
+                <option value="bass10"><a href="#!/bass10">ESP LTD F-54 BLKS</a></option>
+            </select>
+            </td>
+            <td><select size="11">
+                <option><a href="#!">Выберите товар №2</a></option>
+                <option value="bass1"><a href="#!/bass1">ESP LTD B-154/STR</a></option>
+                <option value="bass2"><a href="#!/bass2">Mayones Comodous 4 Classic</a></option>
+                <option value="bass3"><a href="#!/bass3">Vintage V965TSB</a></option>
+                <option value="bass4"><a href="#!/bass4">Vintage V964BLK</a></option>
+                <option value="bass5"><a href="#!/bass5">Vintage V964NA</a></option>
+                <option value="bass6"><a href="#!/bass6">Vintage V964SSB</a></option>
+                <option value="bass7"><a href="#!/bass7">Cort GB4-Custom NAT</a></option>
+                <option value="bass8"><a href="#!/bass8">Vintage V904B</a></option>
+                <option value="bass9"><a href="#!/bass9">Sterling by MusicMan Ray34 TWB</a></option>
+                <option value="bass10"><a href="#!/bass10">ESP LTD F-54 BLKS</a></option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td><div ng-app="Ch1App">
+                <div ng-view></div>
+            </div>
+            </td>
+            <td><div ng-app="Ch2App">
+                <div ng-view></div>
+            </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    var app = angular.module("Ch1App", ["ngRoute"]);
+
+    app.controller('bass1Ctrl', function($scope, $http) {
+        $http.get("bass1.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass2Ctrl', function($scope, $http) {
+        $http.get("bass2.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass3Ctrl', function($scope, $http) {
+        $http.get("bass3.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass4Ctrl', function($scope, $http) {
+        $http.get("bass4.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass5Ctrl', function($scope, $http) {
+        $http.get("bass5.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass6Ctrl', function($scope, $http) {
+        $http.get("bass6.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass7Ctrl', function($scope, $http) {
+        $http.get("bass7.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass8Ctrl', function($scope, $http) {
+        $http.get("bass8.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass9Ctrl', function($scope, $http) {
+        $http.get("bass9.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass10Ctrl', function($scope, $http) {
+        $http.get("bass10.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+
+    app.config(function($routeProvider) {
+        $routeProvider
+            .when("/bass1", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass1Ctrl"
+            })
+            .when("/bass2", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass2Ctrl"
+            })
+            .when("/bass3", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass3Ctrl"
+            })
+            .when("/bass4", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass4Ctrl"
+            })
+            .when("/bass5", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass5Ctrl"
+            })
+            .when("/bass6", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass6Ctrl"
+            })
+            .when("/bass7", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass7Ctrl"
+            })
+            .when("/bass8", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass8Ctrl"
+            })
+            .when("/bass9", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass9Ctrl"
+            })
+            .when("/bass10", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass10Ctrl"
+            });
+    });
+</script>
+<script>
+    var app = angular.module("Ch2App", ["ngRoute"]);
+
+    app.controller('bass1Ctrl', function($scope, $http) {
+        $http.get("bass1.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass2Ctrl', function($scope, $http) {
+        $http.get("bass2.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass3Ctrl', function($scope, $http) {
+        $http.get("bass3.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass4Ctrl', function($scope, $http) {
+        $http.get("bass4.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass5Ctrl', function($scope, $http) {
+        $http.get("bass5.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass6Ctrl', function($scope, $http) {
+        $http.get("bass6.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass7Ctrl', function($scope, $http) {
+        $http.get("bass7.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass8Ctrl', function($scope, $http) {
+        $http.get("bass8.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass9Ctrl', function($scope, $http) {
+        $http.get("bass9.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('bass10Ctrl', function($scope, $http) {
+        $http.get("bass10.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+
+    app.config(function($routeProvider) {
+        $routeProvider
+            .when("/bass1", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass1Ctrl"
+            })
+            .when("/bass2", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass2Ctrl"
+            })
+            .when("/bass3", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass3Ctrl"
+            })
+            .when("/bass4", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass4Ctrl"
+            })
+            .when("/bass5", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass5Ctrl"
+            })
+            .when("/bass6", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass6Ctrl"
+            })
+            .when("/bass7", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass7Ctrl"
+            })
+            .when("/bass8", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass8Ctrl"
+            })
+            .when("/bass9", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass9Ctrl"
+            })
+            .when("/bass10", {
+                templateUrl: "MaketSrav.htm",
+                controller : "bass10Ctrl"
+            });
+    });
+</script>

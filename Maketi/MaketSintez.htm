@@ -1,0 +1,173 @@
+<div>
+<table>
+    <tr>
+        <td><select size="7">
+            <option><a href="#!">Выберите товар №1</a></option>
+            <option value="sintez1"><a href="#!/sintez1">Roland JD-XA</a></option>
+            <option value="sintez2"><a href="#!/sintez2">Casio LK-280</a></option>
+            <option value="sintez3"><a href="#!/sintez3">Casio CTK-7200</a></option>
+            <option value="sintez4"><a href="#!/sintez4">Casio CTK-240</a></option>
+            <option value="sintez5"><a href="#!/sintez5">Roland BK-3-BK</a></option>
+            <option value="sintez6"><a href="#!/sintez6">Yamaha PSR-E363</a></option>
+        </select>
+        </td>
+        <td><select size="7">
+            <option><a href="#!">Выберите товар №2</a></option>
+            <option value="sintez1"><a href="#!/sintez1">Roland JD-XA</a></option>
+            <option value="sintez2"><a href="#!/sintez2">Casio LK-280</a></option>
+            <option value="sintez3"><a href="#!/sintez3">Casio CTK-7200</a></option>
+            <option value="sintez4"><a href="#!/sintez4">Casio CTK-240</a></option>
+            <option value="sintez5"><a href="#!/sintez5">Roland BK-3-BK</a></option>
+            <option value="sintez6"><a href="#!/sintez6">Yamaha PSR-E363</a></option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td><div ng-app="Ch1App">
+            <div ng-view></div>
+        </div>
+        </td>
+        <td><div ng-app="Ch2App">
+            <div ng-view></div>
+        </div>
+        </td>
+    </tr>
+</table>
+</div>
+
+<script>
+    var app = angular.module("Ch1App", ["ngRoute"]);
+
+    app.controller('sintez1Ctrl', function($scope, $http) {
+        $http.get("sintez1.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('sintez2Ctrl', function($scope, $http) {
+        $http.get("sintez2.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('sintez3Ctrl', function($scope, $http) {
+        $http.get("sintez3.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('sintez4Ctrl', function($scope, $http) {
+        $http.get("sintez4.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('sintez5Ctrl', function($scope, $http) {
+        $http.get("sintez5.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('sintez6Ctrl', function($scope, $http) {
+        $http.get("sintez6.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+
+    app.config(function($routeProvider) {
+        $routeProvider
+            .when("/sintez1", {
+                templateUrl: "MaketSrav.htm",
+                controller : "sintez1Ctrl"
+            })
+            .when("/sintez2", {
+                templateUrl: "MaketSrav.htm",
+                controller : "sintez2Ctrl"
+            })
+            .when("/sintez3", {
+                templateUrl: "MaketSrav.htm",
+                controller : "sintez3Ctrl"
+            })
+            .when("/sintez4", {
+                templateUrl: "MaketSrav.htm",
+                controller : "sintez4Ctrl"
+            })
+            .when("/sintez5", {
+                templateUrl: "MaketSrav.htm",
+                controller : "sintez5Ctrl"
+            })
+            .when("/sintez6", {
+                templateUrl: "MaketSrav.htm",
+                controller : "sintez6Ctrl"
+            });
+    });
+</script>
+<script>
+    var app = angular.module("Ch2App", ["ngRoute"]);
+
+    app.controller('sintez1Ctrl', function($scope, $http) {
+        $http.get("sintez1.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('sintez2Ctrl', function($scope, $http) {
+        $http.get("sintez2.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('sintez3Ctrl', function($scope, $http) {
+        $http.get("sintez3.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('sintez4Ctrl', function($scope, $http) {
+        $http.get("sintez4.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('sintez5Ctrl', function($scope, $http) {
+        $http.get("sintez5.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('sintez6Ctrl', function($scope, $http) {
+        $http.get("sintez6.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+
+    app.config(function($routeProvider) {
+        $routeProvider
+            .when("/sintez1", {
+                templateUrl: "MaketSrav.htm",
+                controller : "sintez1Ctrl"
+            })
+            .when("/sintez2", {
+                templateUrl: "MaketSrav.htm",
+                controller : "sintez2Ctrl"
+            })
+            .when("/sintez3", {
+                templateUrl: "MaketSrav.htm",
+                controller : "sintez3Ctrl"
+            })
+            .when("/sintez4", {
+                templateUrl: "MaketSrav.htm",
+                controller : "sintez4Ctrl"
+            })
+            .when("/sintez5", {
+                templateUrl: "MaketSrav.htm",
+                controller : "sintez5Ctrl"
+            })
+            .when("/sintez6", {
+                templateUrl: "MaketSrav.htm",
+                controller : "sintez6Ctrl"
+            });
+    });
+</script>

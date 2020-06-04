@@ -1,0 +1,261 @@
+<div>
+<table>
+    <tr>
+        <td><select size="11">
+            <option><a href="#!">Выберите товар №1</a></option>
+            <option value="electro1"><a href="#!/electro1">Dean Custom 350 Floyd Metallic Sillver</a></option>
+            <option value="electro2"><a href="#!/electro2">Dean Custom 380 Floyd Trans Amberburst</a></option>
+            <option value="electro3"><a href="#!/electro3">AXL AS-820 CKBW Badwater SRO</a></option>
+            <option value="electro4"><a href="#!/electro4">Dean Michael Batio MAB3 Silver Burst</a></option>
+            <option value="electro5"><a href="#!/electro5">Dean Razorback - Skullz w/Case (RZR SKLZ)</a></option>
+            <option value="electro6"><a href="#!/electro6">Dean V Dave Mustaine - Rust In Peace w/Case (VMNT RIP)</a></option>
+            <option value="electro7"><a href="#!/electro7">ESP LTD H-338 BLKS</a></option>
+            <option value="electro8"><a href="#!/electro8">ESP LTD Viper-100/FM/STBC</a></option>
+            <option value="electro9"><a href="#!/electro9">Vintage V100AW</a></option>
+            <option value="electro10"><a href="#!/electro10">Vintage V2BK</a></option>
+        </select>
+        </td>
+        <td><select size="11">
+            <option><a href="#!">Выберите товар №2</a></option>
+            <option value="electro1"><a href="#!/electro1">Dean Custom 350 Floyd Metallic Sillver</a></option>
+            <option value="electro2"><a href="#!/electro2">Dean Custom 380 Floyd Trans Amberburst</a></option>
+            <option value="electro3"><a href="#!/electro3">AXL AS-820 CKBW Badwater SRO</a></option>
+            <option value="electro4"><a href="#!/electro4">Dean Michael Batio MAB3 Silver Burst</a></option>
+            <option value="electro5"><a href="#!/electro5">Dean Razorback - Skullz w/Case (RZR SKLZ)</a></option>
+            <option value="electro6"><a href="#!/electro6">Dean V Dave Mustaine - Rust In Peace w/Case (VMNT RIP)</a></option>
+            <option value="electro7"><a href="#!/electro7">ESP LTD H-338 BLKS</a></option>
+            <option value="electro8"><a href="#!/electro8">ESP LTD Viper-100/FM/STBC</a></option>
+            <option value="electro9"><a href="#!/electro9">Vintage V100AW</a></option>
+            <option value="electro10"><a href="#!/electro10">Vintage V2BK</a></option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td><div ng-app="Ch1App">
+            <div ng-view></div>
+        </div>
+        </td>
+        <td><div ng-app="Ch2App">
+            <div ng-view></div>
+        </div>
+        </td>
+    </tr>
+</table>
+</div>
+
+<script>
+    var app = angular.module("Ch1App", ["ngRoute"]);
+
+    app.controller('electro1Ctrl', function($scope, $http) {
+        $http.get("electro1.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro2Ctrl', function($scope, $http) {
+        $http.get("electro2.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro3Ctrl', function($scope, $http) {
+        $http.get("electro3.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro4Ctrl', function($scope, $http) {
+        $http.get("electro4.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro5Ctrl', function($scope, $http) {
+        $http.get("electro5.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro6Ctrl', function($scope, $http) {
+        $http.get("electro6.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro7Ctrl', function($scope, $http) {
+        $http.get("electro7.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro8Ctrl', function($scope, $http) {
+        $http.get("electro8.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro9Ctrl', function($scope, $http) {
+        $http.get("electro9.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro10Ctrl', function($scope, $http) {
+        $http.get("electro10.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+
+    app.config(function($routeProvider) {
+        $routeProvider
+            .when("/electro1", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro1Ctrl"
+            })
+            .when("/electro2", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro2Ctrl"
+            })
+            .when("/electro3", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro3Ctrl"
+            })
+            .when("/electro4", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro4Ctrl"
+            })
+            .when("/electro5", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro5Ctrl"
+            })
+            .when("/electro6", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro6Ctrl"
+            })
+            .when("/electro7", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro7Ctrl"
+            })
+            .when("/electro8", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro8Ctrl"
+            })
+            .when("/electro9", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro9Ctrl"
+            })
+            .when("/electro10", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro10Ctrl"
+            });
+    });
+</script>
+<script>
+    var app = angular.module("Ch2App", ["ngRoute"]);
+
+    app.controller('electro1Ctrl', function($scope, $http) {
+        $http.get("electro1.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro2Ctrl', function($scope, $http) {
+        $http.get("electro2.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro3Ctrl', function($scope, $http) {
+        $http.get("electro3.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro4Ctrl', function($scope, $http) {
+        $http.get("electro4.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro5Ctrl', function($scope, $http) {
+        $http.get("electro5.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro6Ctrl', function($scope, $http) {
+        $http.get("electro6.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro7Ctrl', function($scope, $http) {
+        $http.get("electro7.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro8Ctrl', function($scope, $http) {
+        $http.get("electro8.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro9Ctrl', function($scope, $http) {
+        $http.get("electro9.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+    app.controller('electro10Ctrl', function($scope, $http) {
+        $http.get("electro10.json")
+            .then(function(response) {
+                $scope.products = response.data;
+            });
+    });
+
+    app.config(function($routeProvider) {
+        $routeProvider
+            .when("/electro1", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro1Ctrl"
+            })
+            .when("/electro2", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro2Ctrl"
+            })
+            .when("/electro3", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro3Ctrl"
+            })
+            .when("/electro4", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro4Ctrl"
+            })
+            .when("/electro5", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro5Ctrl"
+            })
+            .when("/electro6", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro6Ctrl"
+            })
+            .when("/electro7", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro7Ctrl"
+            })
+            .when("/electro8", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro8Ctrl"
+            })
+            .when("/electro9", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro9Ctrl"
+            })
+            .when("/electro10", {
+                templateUrl: "MaketSrav.htm",
+                controller : "electro10Ctrl"
+            });
+    });
+</script>
