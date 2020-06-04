@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сравнение товаров</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        .navbar {
+            margin-bottom: 0px;
+            border-radius: 0;
+            background-color: black;
+            border: 1px solid darkorange;
+            color: #333333;
+        }
+
+        .jumbotron {
+            margin-bottom: 0;
+            border: 1px solid darkmagenta;
+            color: #414141;
+            background-color: black;
+        }
+
+        footer {
+            padding: 25px;
+            background: url("img/footerBG.png");
+            border: 1px solid gray;
+        }
+        body{
+            background-color: black;
+        }
+        .navbar-inverse .navbar-nav li a{
+            color: #414141;
+        }
+    </style>
+</head>
+<body>
+<div class="jumbotron flex-container">
+    <div class="ultratest3">
+        <img src="img/bigLogo.jpg" height="200" width="200">
+    </div>
+
+    <div class="container text-center">
+        <h1 class="colorForH">Internet market "Noise, pancake"</h1>
+        <p>Top tools in the world, lets check it</p>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="logo.jpg" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Главная<br>Страница</a></li>
+                <li><a href="Products.html" class="btn"><span class="glyphicon glyphicon-star"></span> Товары</a></li>
+                <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Личный кабинет</a></li>-->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <!-- <li><a href="LogIn.html"><span class="glyphicon glyphicon-log-in"></span> Вход</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Корзина</a></li>-->
+            </ul><br><br><br>
+        </div>
+    </div>
+</nav>
+<br><br>
+
+<table>
+    <tr>
+        <td><select size="10">
+            <option><a href="#!">Выберете товар №1</a></option>
+            <option value="bass1"><a href="#!/bass1">ESP LTD B-154/STR</a></option>
+            <option value="bass2"><a href="#!/bass2">Mayones Comodous 4 Classic</a></option>
+            <option value="bass3"><a href="#!/bass3">Vintage V965TSB</a></option>
+            <option value="bass4"><a href="#!/bass4">Vintage V964BLK</a></option>
+            <option value="bass5"><a href="#!/bass5">Vintage V964NA</a></option>
+            <option value="bass6"><a href="#!/bass6">Vintage V964SSB</a></option>
+            <option value="bass7"><a href="#!/bass7">Cort GB4-Custom NAT</a></option>
+            <option value="bass8"><a href="#!/bass8">Vintage V904B</a></option>
+            <option value="bass9"><a href="#!/bass9">Sterling by MusicMan Ray34 TWB</a></option>
+            <option value="bass10"><a href="#!/bass10">ESP LTD F-54 BLKS</a></option>
+            <option value="classic1"><a href="#!/classic1">Strunal 4455-4/4</a></option>
+            <option value="classic2"><a href="#!/classic2">Strunal 979-4/4</a></option>
+            <option value="classic3"><a href="#!/classic3">Cort AC200 NAT</a></option>
+            <option value="classic4"><a href="#!/classic4">Yamaha C40</a></option>
+            <option value="classic5"><a href="#!/classic5">Yamaha CG122MS</a></option>
+            <option value="classic6"><a href="#!/classic6">Sigma CR-6</a></option>
+            <option value="electro1"><a href="#!/electro1">Dean Custom 350 Floyd Metallic Sillver</a></option>
+            <option value="electro2"><a href="#!/electro2">Dean Custom 380 Floyd Trans Amberburst</a></option>
+            <option value="electro3"><a href="#!/electro3">AXL AS-820 CKBW Badwater SRO</a></option>
+            <option value="electro4"><a href="#!/electro4">Dean Michael Batio MAB3 Silver Burst</a></option>
+            <option value="electro5"><a href="#!/electro5">Dean Razorback - Skullz w/Case (RZR SKLZ)</a></option>
+            <option value="electro6"><a href="#!/electro6">Dean V Dave Mustaine - Rust In Peace w/Case (VMNT RIP)</a></option>
+            <option value="electro7"><a href="#!/electro7">ESP LTD H-338 BLKS</a></option>
+            <option value="electro8"><a href="#!/electro8">ESP LTD Viper-100/FM/STBC</a></option>
+            <option value="electro9"><a href="#!/electro9">Vintage V100AW</a></option>
+            <option value="electro10"><a href="#!/electro10">Vintage V2BK</a></option>
+            <option value="akustic1"><a href="#!/akustic1">Flight AD-200 BK </a></option>
+            <option value="akustic2"><a href="#!/akustic2">Cort AF510 BKS</a></option>
+            <option value="akustic3"><a href="#!/akustic3">Cort AD880 NS</a></option>
+            <option value="akustic4"><a href="#!/akustic4">Cort Jade1 OP</a></option>
+            <option value="akustic5"><a href="#!/akustic5">Greg Bennett GST9-1 NAT</a></option>
+            <option value="akustic6"><a href="#!/akustic6">Sigma DR-1ST-SB</a></option>
+            <option value="sintez1"><a href="#!/sintez1">Roland JD-XA</a></option>
+            <option value="sintez2"><a href="#!/sintez2">Casio LK-280</a></option>
+            <option value="sintez3"><a href="#!/sintez3">Casio CTK-7200</a></option>
+            <option value="sintez4"><a href="#!/sintez4">Casio CTK-240</a></option>
+            <option value="sintez5"><a href="#!/sintez5">Roland BK-3-BK</a></option>
+            <option value="sintez6"><a href="#!/sintez6">Yamaha PSR-E363</a></option>
+        </select></td>
+        <td><select size="10">
+            <option><a href="#!">Выберете товар №2</a></option>
+            <option value="bass1"><a href="#!/bass1">ESP LTD B-154/STR</a></option>
+            <option value="bass2"><a href="#!/bass2">Mayones Comodous 4 Classic</a></option>
+            <option value="bass3"><a href="#!/bass3">Vintage V965TSB</a></option>
+            <option value="bass4"><a href="#!/bass4">Vintage V964BLK</a></option>
+            <option value="bass5"><a href="#!/bass5">Vintage V964NA</a></option>
+            <option value="bass6"><a href="#!/bass6">Vintage V964SSB</a></option>
+            <option value="bass7"><a href="#!/bass7">Cort GB4-Custom NAT</a></option>
+            <option value="bass8"><a href="#!/bass8">Vintage V904B</a></option>
+            <option value="bass9"><a href="#!/bass9">Sterling by MusicMan Ray34 TWB</a></option>
+            <option value="bass10"><a href="#!/bass10">ESP LTD F-54 BLKS</a></option>
+            <option value="classic1"><a href="#!/classic1">Strunal 4455-4/4</a></option>
+            <option value="classic2"><a href="#!/classic2">Strunal 979-4/4</a></option>
+            <option value="classic3"><a href="#!/classic3">Cort AC200 NAT</a></option>
+            <option value="classic4"><a href="#!/classic4">Yamaha C40</a></option>
+            <option value="classic5"><a href="#!/classic5">Yamaha CG122MS</a></option>
+            <option value="classic6"><a href="#!/classic6">Sigma CR-6</a></option>
+            <option value="electro1"><a href="#!/electro1">Dean Custom 350 Floyd Metallic Sillver</a></option>
+            <option value="electro2"><a href="#!/electro2">Dean Custom 380 Floyd Trans Amberburst</a></option>
+            <option value="electro3"><a href="#!/electro3">AXL AS-820 CKBW Badwater SRO</a></option>
+            <option value="electro4"><a href="#!/electro4">Dean Michael Batio MAB3 Silver Burst</a></option>
+            <option value="electro5"><a href="#!/electro5">Dean Razorback - Skullz w/Case (RZR SKLZ)</a></option>
+            <option value="electro6"><a href="#!/electro6">Dean V Dave Mustaine - Rust In Peace w/Case (VMNT RIP)</a></option>
+            <option value="electro7"><a href="#!/electro7">ESP LTD H-338 BLKS</a></option>
+            <option value="electro8"><a href="#!/electro8">ESP LTD Viper-100/FM/STBC</a></option>
+            <option value="electro9"><a href="#!/electro9">Vintage V100AW</a></option>
+            <option value="electro10"><a href="#!/electro10">Vintage V2BK</a></option>
+            <option value="akustic1"><a href="#!/akustic1">Flight AD-200 BK </a></option>
+            <option value="akustic2"><a href="#!/akustic2">Cort AF510 BKS</a></option>
+            <option value="akustic3"><a href="#!/akustic3">Cort AD880 NS</a></option>
+            <option value="akustic4"><a href="#!/akustic4">Cort Jade1 OP</a></option>
+            <option value="akustic5"><a href="#!/akustic5">Greg Bennett GST9-1 NAT</a></option>
+            <option value="akustic6"><a href="#!/akustic6">Sigma DR-1ST-SB</a></option>
+            <option value="sintez1"><a href="#!/sintez1">Roland JD-XA</a></option>
+            <option value="sintez2"><a href="#!/sintez2">Casio LK-280</a></option>
+            <option value="sintez3"><a href="#!/sintez3">Casio CTK-7200</a></option>
+            <option value="sintez4"><a href="#!/sintez4">Casio CTK-240</a></option>
+            <option value="sintez5"><a href="#!/sintez5">Roland BK-3-BK</a></option>
+            <option value="sintez6"><a href="#!/sintez6">Yamaha PSR-E363</a></option>
+        </select></td>
+    </tr>
+    <tr>
+        <td class="razmertabl2"></td>
+        <td class="razmertabl2"></td>
+    </tr>
+</table>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<footer class="container-fluid text-center">
+    <div class="flex-container container">
+        <div class="ultratest1">
+            <h3>Покупателям</h3>
+            <ul>
+                <li>Доставка</li>
+                <li>Оплата</li>
+                <li>Гарантия</li>
+                <li>Возврат</li>
+                <li>Политика Конфиденциальности</li>
+            </ul>
+        </div>
+
+        <div class="ultratest1">
+            <h3>О компании</h3>
+            <ul>
+                <li>О компании</li>
+                <li>Новости</li>
+                <li>Вакансии</li>
+                <li>Контакты</li>
+                <li>Карта сайта</li>
+            </ul>
+        </div>
+
+        <div class="ultratest1">
+            <h3>Акции и скидки</h3>
+            <ul>
+                <li>Акции</li>
+                <li>Подарочные карты</li>
+                <li>Бонусная программа</li>
+            </ul>
+        </div>
+
+        <div class="ultratest1">
+            <h3>Check us on</h3>
+            <p class="text-middle"><a href="https:\\vk.com" target="_blank"><img src="img/VK.jpg" class="razmImg1"></a> <br><a href="https:\\instagram.com" target="_blank"><img src="img/instagram.png" class="razmImg1"></a><br><a href="https:\\youtube.com" target="_blank"><img src="img/youtube.jpg" class="razmImg1"></a></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
