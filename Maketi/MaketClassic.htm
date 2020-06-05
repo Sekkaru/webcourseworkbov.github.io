@@ -1,35 +1,39 @@
 <div>
 <table>
     <tr>
-        <td><select size="7">
-            <option><a href="#!">Выберите товар №1</a></option>
-            <option value="classic1"><a href="#!/classic1">Strunal 4455-4/4</a></option>
-            <option value="classic2"><a href="#!/classic2">Strunal 979-4/4</a></option>
-            <option value="classic3"><a href="#!/classic3">Cort AC200 NAT</a></option>
-            <option value="classic4"><a href="#!/classic4">Yamaha C40</a></option>
-            <option value="classic5"><a href="#!/classic5">Yamaha CG122MS</a></option>
-            <option value="classic6"><a href="#!/classic6">Sigma CR-6</a></option>
-        </select>
+        <td>
+            <button onclick="Open_c1_1()">Strunal 4455-4/4</button><br>
+            <button onclick="Open_c1_2()">Strunal 979-4/4</button><br>
+            <button onclick="Open_c1_3()">Cort AC200 NAT</button><br>
+            <button onclick="Open_c1_4()">Yamaha C40</button><br>
+            <button onclick="Open_c1_5()">Yamaha CG122MS</button><br>
+            <button onclick="Open_c1_6()">Sigma CR-6</button>
         </td>
-        <td><select size="7">
-            <option><a href="#!">Выберите товар №2</a></option>
-            <option value="classic1"><a href="#!/classic1">Strunal 4455-4/4</a></option>
-            <option value="classic2"><a href="#!/classic2">Strunal 979-4/4</a></option>
-            <option value="classic3"><a href="#!/classic3">Cort AC200 NAT</a></option>
-            <option value="classic4"><a href="#!/classic4">Yamaha C40</a></option>
-            <option value="classic5"><a href="#!/classic5">Yamaha CG122MS</a></option>
-            <option value="classic6"><a href="#!/classic6">Sigma CR-6</a></option>
-        </select>
+        <td>
+            <button onclick="Open_c2_1()">Strunal 4455-4/4</button><br>
+            <button onclick="Open_c2_2()">Strunal 979-4/4</button><br>
+            <button onclick="Open_c2_3()">Cort AC200 NAT</button><br>
+            <button onclick="Open_c2_4()">Yamaha C40</button><br>
+            <button onclick="Open_c2_5()">Yamaha CG122MS</button><br>
+            <button onclick="Open_c2_6()">Sigma CR-6</button><
         </td>
     </tr>
     <tr>
-        <td><div ng-app="Ch3App">
-            <div ng-view></div>
-        </div>
+        <td>
+            <div class="button_c1_1" id="button_c1_1"></div>
+            <div class="button_c1_2" id="button_c1_2"></div>
+            <div class="button_c1_3" id="button_c1_3"></div>
+            <div class="button_c1_4" id="button_c1_4"></div>
+            <div class="button_c1_5" id="button_c1_5"></div>
+            <div class="button_c1_6" id="button_c1_6"></div>
         </td>
-        <td><div ng-app="Ch3App">
-            <div ng-view></div>
-        </div>
+        <td>
+            <div class="button_c2_1" id="button_c2_1"></div>
+            <div class="button_c2_2" id="button_c2_2"></div>
+            <div class="button_c2_3" id="button_c2_3"></div>
+            <div class="button_c2_4" id="button_c2_4"></div>
+            <div class="button_c2_5" id="button_c2_5"></div>
+            <div class="button_c2_6" id="button_c2_6"></div>
         </td>
     </tr>
 </table>

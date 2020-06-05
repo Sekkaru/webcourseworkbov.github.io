@@ -1,35 +1,39 @@
 <div>
 <table>
     <tr>
-        <td><select size="7">
-            <option><a href="#!">Выберите товар №1</a></option>
-            <option value="akustic1"><a href="#!/akustic1">Flight AD-200 BK </a></option>
-            <option value="akustic2"><a href="#!/akustic2">Cort AF510 BKS</a></option>
-            <option value="akustic3"><a href="#!/akustic3">Cort AD880 NS</a></option>
-            <option value="akustic4"><a href="#!/akustic4">Cort Jade1 OP</a></option>
-            <option value="akustic5"><a href="#!/akustic5">Greg Bennett GST9-1 NAT</a></option>
-            <option value="akustic6"><a href="#!/akustic6">Sigma DR-1ST-SB</a></option>
-        </select>
+        <td>
+            <button onclick="Open_a1_1()">Flight AD-200 BK </button><br>
+            <button onclick="Open_a1_2()">Cort AF510 BKS</button><br>
+            <button onclick="Open_a1_3()">Cort AD880 NS</button><br>
+            <button onclick="Open_a1_4()">Cort Jade1 OP</button><br>
+            <button onclick="Open_a1_5()">Greg Bennett GST9-1 NAT</button><br>
+            <button onclick="Open_a1_6()">Sigma DR-1ST-SB</button>
         </td>
-        <td><select size="7">
-            <option><a href="#!">Выберите товар №2</a></option>
-            <option value="akustic1"><a href="#!/akustic1">Flight AD-200 BK </a></option>
-            <option value="akustic2"><a href="#!/akustic2">Cort AF510 BKS</a></option>
-            <option value="akustic3"><a href="#!/akustic3">Cort AD880 NS</a></option>
-            <option value="akustic4"><a href="#!/akustic4">Cort Jade1 OP</a></option>
-            <option value="akustic5"><a href="#!/akustic5">Greg Bennett GST9-1 NAT</a></option>
-            <option value="akustic6"><a href="#!/akustic6">Sigma DR-1ST-SB</a></option>
-        </select>
+        <td>
+            <button onclick="Open_a2_1()">Flight AD-200 BK </button><br>
+            <button onclick="Open_a2_2()">Cort AF510 BKS</button><br>
+            <button onclick="Open_a2_3()">Cort AD880 NS</button><br>
+            <button onclick="Open_a2_4()">Cort Jade1 OP</button><br>
+            <button onclick="Open_a2_5()">Greg Bennett GST9-1 NAT</button><br>
+            <button onclick="Open_a2_6()">Sigma DR-1ST-SB</button>
         </td>
     </tr>
     <tr>
-        <td><div ng-app="Ch7App">
-            <div ng-view></div>
-        </div>
+        <td>
+            <div class="button_a1_1" id="button_a1_1"></div>
+            <div class="button_a1_2" id="button_a1_2"></div>
+            <div class="button_a1_3" id="button_a1_3"></div>
+            <div class="button_a1_4" id="button_a1_4"></div>
+            <div class="button_a1_5" id="button_a1_5"></div>
+            <div class="button_a1_6" id="button_a1_6"></div>
         </td>
-        <td><div ng-app="Ch7App">
-            <div ng-view></div>
-        </div>
+        <td>
+            <div class="button_a2_1" id="button_a2_1"></div>
+            <div class="button_a2_2" id="button_a2_2"></div>
+            <div class="button_a2_3" id="button_a2_3"></div>
+            <div class="button_a2_4" id="button_a2_4"></div>
+            <div class="button_a2_5" id="button_a2_5"></div>
+            <div class="button_a2_6" id="button_a2_6"></div>
         </td>
     </tr>
 </table>
