@@ -1,0 +1,86 @@
+.button_b1_1{display: none;}
+.button_b1_2{display: none;}
+.button_b1_3{display: none;}
+.button_b1_4{display: none;}
+.button_b1_5{display: none;}
+.button_b1_6{display: none;}
+.button_b1_7{display: none;}
+.button_b1_8{display: none;}
+.button_b1_9{display: none;}
+.button_b1_10{display: none;}
+.button_b2_1{display: none;}
+.button_b2_2{display: none;}
+.button_b2_3{display: none;}
+.button_b2_4{display: none;}
+.button_b2_5{display: none;}
+.button_b2_6{display: none;}
+.button_b2_7{display: none;}
+.button_b2_8{display: none;}
+.button_b2_9{display: none;}
+.button_b2_10{display: none;}
+.button_c1_1{display: none;}
+.button_c1_2{display: none;}
+.button_c1_3{display: none;}
+.button_c1_4{display: none;}
+.button_c1_5{display: none;}
+.button_c1_6{display: none;}
+.button_c2_1{display: none;}
+.button_c2_2{display: none;}
+.button_c2_3{display: none;}
+.button_c2_4{display: none;}
+.button_c2_5{display: none;}
+.button_c2_6{display: none;}
+.button_e1_1{display: none;}
+.button_e1_2{display: none;}
+.button_e1_3{display: none;}
+.button_e1_4{display: none;}
+.button_e1_5{display: none;}
+.button_e1_6{display: none;}
+.button_e1_7{display: none;}
+.button_e1_8{display: none;}
+.button_e1_9{display: none;}
+.button_e1_10{display: none;}
+.button_e2_1{display: none;}
+.button_e2_2{display: none;}
+.button_e2_3{display: none;}
+.button_e2_4{display: none;}
+.button_e2_5{display: none;}
+.button_e2_6{display: none;}
+.button_e2_7{display: none;}
+.button_e2_8{display: none;}
+.button_e2_9{display: none;}
+.button_e2_10{display: none;}
+.button_a1_1{display: none;}
+.button_a1_2{display: none;}
+.button_a1_3{display: none;}
+.button_a1_4{display: none;}
+.button_a1_5{display: none;}
+.button_a1_6{display: none;}
+.button_a2_1{display: none;}
+.button_a2_2{display: none;}
+.button_a2_3{display: none;}
+.button_a2_4{display: none;}
+.button_a2_5{display: none;}
+.button_a2_6{display: none;}
+.button_s1_1{display: none;}
+.button_s1_2{display: none;}
+.button_s1_3{display: none;}
+.button_s1_4{display: none;}
+.button_s1_5{display: none;}
+.button_s1_6{display: none;}
+.button_s2_1{display: none;}
+.button_s2_2{display: none;}
+.button_s2_3{display: none;}
+.button_s2_4{display: none;}
+.button_s2_5{display: none;}
+.button_s2_6{display: none;}
+
+
+table{
+    border: 1px white solid;
+}
+tr,td{
+    border: 1px white solid;
+    width: 710px;
+    height: 265px;
+}
